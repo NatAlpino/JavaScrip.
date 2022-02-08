@@ -13,24 +13,20 @@
         <h1>Iniciando estudos com DOM</h1>
         <p>Aqui vai o resultado:</p>
         <p>Aprendendo a usar <strong>DOM</strong> em JavaScrip</p>
-        <div>Clique em mim</div>
+        <div id="msg">Clique em mim</div>
         <script>
-            var p1 = document.getElementsByTagName('p')[0]
-            var corpo = document.body
-            corpo.style.background = 'black';
-            p1.style.color = 'white';
-            window.document.write(p1.innerText) 
+            document.write("Olá Mundo!!!") 
+            var d = document.getElementById("msg");
+            d.style.background = "green"
+            d.innerText = "Natália"
         </script>
     </body>
 </html>
 
 
-
 <!--
-    *Na linha 18 eu estou pegando a tag p na posiçao 0, já que eu tenho mais de uma. 
-Lembrando que a contagem sempre começa no 0.
-    *Entre as linhas 18 e 22 eu estou manipulando os elementos que eu quero, inclusive 
-alterando o CSS, tudo atráves do DOM
+    Na linha 16 eu identifiquei uma div com um ID.
+    Na linha 19 eu criei uma variavel que recebia essa div atraves do ID.
+    Nas linhas 20 e 21 eu fiz alteraçoes na div atraves do ID.
 -->
-
 
