@@ -14,19 +14,27 @@
         <p>Aqui vai o resultado:</p>
         <p>Aprendendo a usar <strong>DOM</strong> em JavaScrip</p>
         <div id="msg">Clique em mim</div>
+        <div class="msg2">Clique em mim</div>
         <script>
             var d = document.querySelector('div#msg')
+            var e = document.querySelector('div.msg2')
             d.style.color = 'blue'
+            e.style.color = 'pink'
         </script>
     </body>
 </html>
 
 
 <!--
-    Na linha 16 eu identifiquei uma div com um ID.
-    Na linha 18 eu usei o querySelector para identificar o id da div.
-    Lembrando que DIV sempre é chamada com # e classe sempre é chamada com .
-    Na linha 19 eu manipulei o CSS atraves do querrySelector.
+   Na linha 16 temos uma div que foi identificada atraves de id.
+   Na linha 17 temos uma div que foi identificada atraves de classe.
+
+   Na linha 19 estou criando variavel com querrySelector e usando #, pois a div em questao
+está identificada po id, já na linha 20 o procedimento é o mesmo, mas estou usando . pois 
+essa div foi identifcada com classe.
+
+ID = #
+Classe = .
 -->
 
 
