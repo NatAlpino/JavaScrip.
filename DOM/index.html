@@ -15,10 +15,8 @@
         <p>Aprendendo a usar <strong>DOM</strong> em JavaScrip</p>
         <div id="msg">Clique em mim</div>
         <script>
-            document.write("Olá Mundo!!!") 
-            var d = document.getElementById("msg");
-            d.style.background = "green"
-            d.innerText = "Natália"
+            var d = document.querySelector('div#msg')
+            d.style.color = 'blue'
         </script>
     </body>
 </html>
@@ -26,8 +24,9 @@
 
 <!--
     Na linha 16 eu identifiquei uma div com um ID.
-    Na linha 19 eu criei uma variavel que recebia essa div atraves do ID.
-    Nas linhas 20 e 21 eu fiz alteraçoes na div atraves do ID.
+    Na linha 18 eu usei o querySelector para identificar o id da div.
+    Lembrando que DIV sempre é chamada com # e classe sempre é chamada com .
+    Na linha 19 eu manipulei o CSS atraves do querrySelector.
 -->
 
 
