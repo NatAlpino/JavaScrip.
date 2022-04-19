@@ -1,1 +1,3 @@
-# JavaScrip.
+# JavaScript.
+
+Meus estudos de JavaScript.
