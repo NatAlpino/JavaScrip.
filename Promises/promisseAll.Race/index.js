@@ -1,18 +1,12 @@
-var promisse = Promise.resolve(3)
-var promisse2 = Promise.resolve(4)
-var promisse3 = Promise.resolve(5)
+var promise = Promise.resolve(3);
+var promise2 = Promise.resolve(4);
+var promise3 = Promise.resolve(5);
 
 //Promise.all espera cada uma das promises serem resolvidas pra só ai chamar o .then
-Promise.all([promisse, promisse2, promisse3]) 
-    .then(function (values){
-
-    })
+Promise.all([promise, promise2, promise3]).then(function (values) {});
 
 //Promise.race espera que uma das promises responde e ai já chama o .then e ignora as outras promises.
-Promise.all([promisse, promisse2, promisse3]) 
-.then(function (values){
-
-})
+Promise.race([promise, promise2, promise3]).then(function (values) {});
 
 /*
 Exemplo de utilização dos dois metôdos.
