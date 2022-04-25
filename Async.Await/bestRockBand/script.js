@@ -25,18 +25,18 @@ function bestRockSong(response) {
   });
 }
 //sem async e await:
-// bestRockBand("Queen")
-//   .then((response) => {
-//     console.log("Checking the answer...");
-//     return bestRockSong(response);
-//   })
-//   .then((response) => {
-//     console.log("Finding the best song...");
-//     console.log(response);
-//   })
-//   .catch((err) => {
-//     console.log(err.msg);
-//   });
+bestRockBand("Queen")
+  .then((response) => {
+    console.log("Checking the answer...");
+    return bestRockSong(response);
+  })
+  .then((response) => {
+    console.log("Finding the best song...");
+    console.log(response);
+  })
+  .catch((err) => {
+    console.log(err.msg);
+  });
 
 //com async e await (fica bem menos moroso, escrevemos bem menos pra chegar no mesmo resultado)
 async function doTheJob() {

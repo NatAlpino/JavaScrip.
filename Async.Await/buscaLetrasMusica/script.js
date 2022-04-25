@@ -14,19 +14,19 @@ async function doSubmit() {
 
     lyrics_el.innerHTML = `<div class="spinner-grow" role="status"><span class="sr-only">Carregando...</span></div>`;
 
-    // //.then
-    // findLyrics(artist.ariaValueMax, song.value)
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         if (data.lyrics) {
-    //             lyrics_el.innerHTML = data.lyrics;
-    //         } else {
-    //             lyrics_el.innerHTML = data.error;
-    //         }
-    //     })
-    //     .catch(err => {
-    //         lyrics_el.innerHTML = `Oops! ${err}`;
-    //     })
+    //.then
+    findLyrics(artist.ariaValueMax, song.value)
+        .then(response => response.json())
+        .then(data => {
+            if (data.lyrics) {
+                lyrics_el.innerHTML = data.lyrics;
+            } else {
+                lyrics_el.innerHTML = data.error;
+            }
+        })
+        .catch(err => {
+            lyrics_el.innerHTML = `Oops! ${err}`;
+        })
 
     //async/await
     try {
