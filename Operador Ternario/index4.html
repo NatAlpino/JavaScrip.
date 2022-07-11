@@ -1,0 +1,27 @@
+<!--Com Operador Ternário e variáveis para sucesso e erro-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Operador Ternário</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <button>Make Request</button>
+    <script>
+
+    const succes = "Atualizado com sucesso"
+    const error = "Erro ao atualizar"
+
+      function ternaryOperator () {
+        const status = 400;
+        alert (status === 200 ? (succes) : (error));
+      }
+
+      document
+        .querySelector("button")
+        .addEventListener("click", ternaryOperator);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Operador Ternário</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <button>Make Request</button>
+    <script>
+      function ternaryOperator() {
+        const status = 400;
+        if (status === 200) {
+          alert("Atualizado com sucesso");
+        } else {
+          alert("Erro ao atualizar");
+        }
+      }
+
+    /*
+    Usando o operador ternario:
+      
+       alert(status === 200 ? "Atualizado com sucesso" : "Erro ao atualizar");
+
+    Primeiro vem a ação que é o alert e depois vem a condição, se for 200 então "Atualizado com sucesso" se não "Erro ao atualizar"
+    ? é o mesmo que o if e o : é o mesmo que o else. 
+    A afirmação verdadeira sempre vem primeiro.
+
+    Uma outra forma de fazer é já atribuir a variável junto com o operador ternário:
+
+       const msg = status === 200 ? "Atualizado com sucesso" : "Erro ao atualizar"
+       alert(msg)
+    */
+
+      document
+        .querySelector("button")
+        .addEventListener("click", ternaryOperator);
+    </script>
+  </body>
+</html>
